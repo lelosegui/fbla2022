@@ -1,14 +1,13 @@
 const canvas = document.getElementById("playground");
 
-//canvas.width = 1900;
 
 const context=canvas.getContext("2d");
-
+const block =new Block(90,50,10,10);
 
 function animate() {
     canvas.height = window.innerHeight;
+    block.draw(context);
+
 }
 
 animate();
-
-//oh
